@@ -1,0 +1,134 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .prodContainer .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .product-item mark {
+        background-color: red;
+        border-radius: 4px;
+        color: whitesmoke;
+    }
+
+    .product-item img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .product-item {
+        width: 100%;
+        flex: 1;
+    }
+
+    .prodDescription {
+        font: arial;
+        font-size: 15px;
+    }
+
+    .prodPrice s {
+        color: lightgrey;
+    }
+
+    #prodEntertainment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #prodEntertainment h2 {
+            font: arial;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+    .productEntertainment {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+        .productEntertainment img {
+            height: 50%;
+        }
+        .productEntertainment .product-item a {
+            text-decoration: none;
+            color: black;
+        }
+
+            .productEntertainment .product-item a:hover {
+                color: blue;
+            }
+</style>
+<div id="prodEntertainment">
+
+    <div>
+        <h2 class="title">Tìm kiếm sản phẩm</h2>
+    </div>
+</div>
+<div class="productEntertainment">
+    <div class="product-item">
+        <a href="~/Product/ProductDetail24">
+        <img src="../Content/img/GOI NAP STEAM 20us.png" class="img-fluid" alt="Product 2" onclick="goToProductDetail(2)" />
+        <p class="prodDescription">
+            Gói nạp Steam Wallet 20$ ( Nạp chậm ) (~497.240 VNĐ)
+        </p>
+        <p class="prodPrice">
+            <b>490.000đ</b> <s>500.000đ</s> <mark>-2%</mark>
+        </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail25">
+        <img src="../Content/img/GOI NAP STEAM 50usd.png" class="img-fluid" alt="Product 3" onclick="goToProductDetail(3)" />
+        <p class="prodDescription">
+            Gói nạp Steam Wallet 50$ ( Nạp chậm ) (~1.243.100 VNĐ)
+        </p>
+        <p class="prodPrice">
+            <b>
+                1.200.000đ
+            </b>
+            <s>
+                1.300.000đ
+            </s>
+            <mark>
+                -8%
+            </mark>
+        </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail26">
+        <img src="../Content/img/GOI NAP STEAM 100.png" class="img-fluid" alt="Product 2.2" onclick="goToProductDetail(2.2)" />
+        <p class="prodDescription">
+            Gói nạp Steam Wallet 100$ ( Nạp chậm ) (~2.486.200 VNĐ)
+        </p>
+        <p class="prodPrice">
+            <b>2.350.000đ</b> <s>2.600.000đ</s> <mark>-10%</mark>
+        </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail27">
+        <img src="../Content/img/STEAM 150 TWD.png" class="img-fluid" alt="Product 2.3" onclick="goToProductDetail(2.3)" />
+        <p class="prodDescription">
+            Steam Wallet Code 150 TWD (~115.650 VNĐ)
+        </p>
+        <p class="prodPrice">
+            <b>
+                128.000đ
+            @*</b>
+            <s>
+                6.720.000đ
+            </s>
+            <mark>
+                -93%
+            </mark>*@
+        </p>
+        </a>
+    </div>
+</div>
+
+

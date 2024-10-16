@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="~/Content/MyCSS/StyleProduct.css" rel="stylesheet" />
+    <script src="~/Scripts/MyJS/JavaProduct.js"></script>
+</head>
+<body>
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="~/Content/img/sp1.3.jpg" alt="Black Myth: Wukong" />
+                <button class="view-more-images">Xem thêm ảnh</button>
+            </div>
+
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="product-info">
+                <h1>GTA Grand Theft Auto V: Premium Online Edition - CD Key Rockstar</h1>
+                <p class="product-status">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+                <p class="product-code">Mã sản phẩm:  CDKey 271590r</p>
+                <p class="product-category">
+                    Thể loại:   Action, Adventure, GTA, GTA5, GTA V, GTA 5
+                </p>
+                <p class="product-price">490.000đ<span class="original-price">650.000đ</span> <span class="discount">-25%</span>
+                </p>
+
+                @*Các tùy chọn khác cho sản phẩm*@
+                <div class="product-options">
+                    @*<button class="option-button">14 ngày</button>
+                        <button class="option-button">1 tháng (300TV)</button>
+                        <button class="option-button">28 ngày</button>
+                        <button class="option-button">nâng cấp 1 năm</button>*@
+                </div>
+
+                <!-- Nút Mua ngay và Thêm vào giỏ hàng -->
+                <div class="purchase-buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mô tả chi tiết sản phẩm -->
+        <div class="product-description">
+            <p>Grand Theft Auto V (còn được gọi là Grand Theft Auto 5, GTA 5  hoặc GTA V) là trò chơi video được phát triển bởi Rockstar North thuộc hãng Rockstar Games. Là phiên bản thứ năm trong Dòng trò chơi Grand Theft Auto  và là phần kế tiếp của Grand Theft Auto IV . Bản gốc của trò chơi chính thức được phát hành vào ngày 17 Tháng 9 năm 2013 cho phiên bản Xbox 360 và PlayStation 3. Trò chơi cũng đã được phát hành cho phiên bản Xbox One và PlayStation 4  vào ngày 18 tháng 11 năm 2014, sau đó phát hành cho PC vào ngày 14 tháng 4 năm 2015.</p>
+            <ul>
+                <li>Vui lòng không thay đổi thông tin tài khoản.</li>
+                <li>Giá thuê tài khoản tính theo ngày. Ví dụ bạn muốn mua 5 ngày thì chọn số lượng sản phẩm là 5.</li>
+                <li>Divine Shop cam kết chỉ cho 1 khách hàng thuê tại 1 thời điểm.</li>
+                <li>Tài khoản có thể đã có file save sẵn, bạn có thể xóa đi và chơi từ đầu.</li>
+                <li>Thuê tối thiểu 3 ngày.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+

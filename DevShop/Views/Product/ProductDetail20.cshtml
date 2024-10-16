@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="~/Content/MyCSS/StyleProduct.css" rel="stylesheet" />
+    <script src="~/Scripts/MyJS/JavaProduct.js"></script>
+</head>
+<body>
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="~/Content/img/sp5.4.png" alt="Black Myth: Wukong" />
+                <button class="view-more-images">Xem thêm ảnh</button>
+            </div>
+
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="product-info">
+                <h1>Microsoft Office 2019 Professional Plus for Windows</h1>
+                <p class="product-status">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+                <p class="product-code">Mã sản phẩm:  office 2019 windows</p>
+                <p class="product-category">
+                    Thể loại:  App, Làm việc, win, windows10, microsoft, Làm việc
+                </p>
+                <p class="product-price">810.000đ<span class="original-price">
+    9.500.000đ
+</span> <span class="discount">-91%</span></p>
+
+                @*Các tùy chọn khác cho sản phẩm*@
+                <div class="product-options">
+                    <button class="option-button">2021(Win)</button>
+                        <button class="option-button">2021(MAC)</button>
+                        <button class="option-button">2019(Win)</button>
+                        <button class="option-button">2019(MAC)</button>
+                </div>
+
+                <!-- Nút Mua ngay và Thêm vào giỏ hàng -->
+                <div class="purchase-buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mô tả chi tiết sản phẩm -->
+        <div class="product-description">
+            <p>Microsoft Office là bộ sưu tập phần mềm dùng để phục vụ các công việc văn phòng. Mỗi phần mềm mang đến một mục đích và cung cấp các dịch vụ cho người dùng. Ví dụ, Microsoft Word được sử dụng để tạo tài liệu, văn bản, Microsoft Excel dùng để tạo bảng tính, Microsoft Powerpoint tạo các slide trình chiếu, Microsoft Outlook dùng để quản lý email gửi đến tài khoản. Và những phần mềm còn lại cũng hết sức quan trọng.</p>
+            <ul>
+                <li>Vui lòng không thay đổi thông tin tài khoản.</li>
+                <li>Giá thuê tài khoản tính theo ngày. Ví dụ bạn muốn mua 5 ngày thì chọn số lượng sản phẩm là 5.</li>
+                <li>Divine Shop cam kết chỉ cho 1 khách hàng thuê tại 1 thời điểm.</li>
+                <li>Tài khoản có thể đã có file save sẵn, bạn có thể xóa đi và chơi từ đầu.</li>
+                <li>Thuê tối thiểu 3 ngày.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

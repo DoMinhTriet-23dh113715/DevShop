@@ -1,0 +1,136 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    #prodWork {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #prodWork h2 {
+            font: arial;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+    .productWork {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+        .productWork img {
+            height: 50%;
+        }
+
+    .prodContainer .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .product-item mark {
+        background-color: red;
+        border-radius: 4px;
+        color: whitesmoke;
+    }
+
+    .product-item img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .product-item {
+        width: 100%;
+        flex: 1;
+    }
+
+    .prodDescription {
+        font: arial;
+        font-size: 15px;
+    }
+
+    .prodPrice s {
+        color: lightgrey;
+    }
+    .productWork .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .productWork .product-item a:hover {
+            color: blue;
+        }
+</style>
+<section>
+    <div id="prodWork">
+
+        <div>
+            <h2 class="title">Tìm kiếm sản phẩm</h2>
+        </div>
+    </div>
+    <div class="productWork">
+        <div class="product-item">
+            <a href="~/Product/ProductDetail">
+                <img src="../Content/img/sp5.png" class="img-fluid" alt="Product 5" onclick="goToProductDetail(5)" />
+                <p class="prodDescription">
+                    Windows 10 Professional - CD Key
+                </p>
+                <p class="prodPrice">
+                    <b>290.000đ</b> <s>400.000đ</s> <mark>-28%</mark>
+                </p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="~/Product/ProductDetail18">
+                <img src="../Content/img/sp5.2.png" class="img-fluid" alt="Product 5.2" onclick="goToProductDetail(5.2)" />
+                <p class="prodDescription">
+                    Canva Pro 1 năm - Gia hạn chính chủ
+                </p>
+                <p class="prodPrice">
+                    <b>
+                        295.000đ
+                    </b>
+                    <s>
+                        1.500.000đ
+                    </s>
+                    <mark>
+                        -80%
+                    </mark>
+                </p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="~/Product/ProductDetail19">
+                <img src="../Content/img/sp5.3.png" class="img-fluid" alt="Product 5.3" onclick="goToProductDetail(5.3)" />
+                <p class="prodDescription">
+                    Doodly Standard - Tài khoản vĩnh viễn
+                </p>
+                <p class="prodPrice">
+                    <b>599.000đ</b> <s>4.800.000đ</s> <mark>-88%</mark>
+                </p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="~/Product/ProductDetail20">
+                <img src="../Content/img/sp5.4.png" class="img-fluid" alt="Product 5.4" onclick="goToProductDetail(5.4)" />
+                <p class="prodDescription">
+                    Microsoft Office 2019 Professional Plus for Windows
+                </p>
+                <p class="prodPrice">
+                    <b>
+                        790.000đ
+                    </b>
+                    <s>
+                        9.500.000đ
+                    </s>
+                    <mark>
+                        -25%
+                    </mark>
+                </p>
+            </a>
+        </div>
+    </div>
+</section>
+
+

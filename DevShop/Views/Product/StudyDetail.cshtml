@@ -1,0 +1,132 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .prodContainer .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .product-item mark {
+        background-color: red;
+        border-radius: 4px;
+        color: whitesmoke;
+    }
+
+    .product-item img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .product-item {
+        width: 100%;
+        flex: 1;
+    }
+
+    .prodDescription {
+        font: arial;
+        font-size: 15px;
+    }
+
+    .prodPrice s {
+        color: lightgrey;
+    }
+
+    .productStudy {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+        .productStudy img {
+            height: 50%;
+        }
+
+    #prodStudy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #prodStudy h2 {
+            font: arial;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    .productStudy .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .productStudy .product-item a:hover {
+            color: blue;
+        }
+</style>
+<div id="prodStudy">
+
+    <div>
+        <h2 class="title">Tìm kiếm sản phẩm</h2>
+    </div>
+</div>
+<div class="productStudy">
+    <div class="product-item">
+        <a href="~/Product/ProductDetail4">
+            <img src="../Content/img/sp4.png" class="img-fluid" alt="Product 4" onclick="goToProductDetail(4)" />
+            <p class="prodDescription">
+                Zoom Pro ~1 tháng (28 ngày) - Gói nâng cấp
+            </p>
+            <p class="prodPrice">
+                <b>210.000đ</b> <s>350.000đ</s> <mark>-40%</mark>
+            </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail12">
+            <img src="../Content/img/sp4.2.png" class="img-fluid" alt="Product 4.2" onclick="goToProductDetail(4.2)" />
+            <p class="prodDescription">
+                Quizlet Plus 1 năm - Nâng cấp chính chủ
+            </p>
+            <p class="prodPrice">
+                <b>
+                    399.000đ
+                </b>
+                <s>
+                    990.000đ
+                </s>
+                <mark>
+                    -60%
+                </mark>
+            </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail13">
+            <img src="../Content/img/sp4.3.jpg" class="img-fluid" alt="Product 4.3" onclick="goToProductDetail(4.3)" />
+            <p class="prodDescription">
+                Duolingo 1 năm - Gia hạn chính chủ
+            </p>
+            <p class="prodPrice">
+                <b>290.000đ</b> <s>1.850.000đ</s> <mark>-84%</mark>
+            </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail14">
+            <img src="../Content/img/sp4.4.png" class="img-fluid" alt="Product 4.4" onclick="goToProductDetail(4.4)" />
+            <p class="prodDescription">
+                Turnitin 1 Tháng - Nâng cấp chính chủ
+            </p>
+            <p class="prodPrice">
+                <b>
+                    249.000đ
+                </b>
+                <s>
+                    399.000đ
+                </s>
+                <mark>-38%</mark>
+            </p>
+        </a>
+    </div>
+</div>
+
+

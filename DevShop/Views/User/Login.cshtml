@@ -1,0 +1,55 @@
+﻿
+    @{
+        Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/Content/MyCSS/StyleLogin.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <form class="form_container">
+        <div class="logo_container"></div>
+        <div class="title_container">
+            <p class="title">Login to your Account</p>
+            <span class="subtitle">Get started with our app, just create an account and enjoy the experience.</span>
+        </div>
+        <br>
+        <div class="input_container">
+            <label class="input_label" for="email_field">Email</label>
+            <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon"></svg>
+            <input placeholder="name@mail.com" title="Input title" name="input-name" type="text" class="input_field" id="email_field">
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="password_field">Password</label>
+            <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon"></svg>
+            <input placeholder="Password" title="Input title" name="input-name" type="password" class="input_field" id="password_field">
+        </div>
+        <button title="Sign In" type="submit" class="sign-in_btn">
+            <span>Sign In</span>
+        </button>
+
+        <div class="separator">
+            <hr class="line">
+            <span>Or</span>
+            <hr class="line">
+        </div>
+
+        <button title="Sign In" type="submit" class="sign-in_ggl">
+            <svg height="18" width="18" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"></svg>
+            <span>Sign In with Google</span>
+        </button>
+
+        <button title="Sign In" type="submit" class="sign-in_apl">
+            <svg preserveAspectRatio="xMidYMid" version="1.1" viewBox="0 0 256 315" height="20px" width="16px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"></svg>
+            <span>Sign In with Facebook</span>
+        </button>
+
+        <p class="note">Terms of use &amp; Conditions</p>
+    </form>
+
+</body>
+</html>
+

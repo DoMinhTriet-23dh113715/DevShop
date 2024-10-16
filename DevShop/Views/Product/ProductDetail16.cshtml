@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="~/Content/MyCSS/StyleProduct.css" rel="stylesheet" />
+    <script src="~/Scripts/MyJS/JavaProduct.js"></script>
+</head>
+<body>
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="~/Content/img/sp2.3.png" alt="Black Myth: Wukong" />
+                <button class="view-more-images">Xem thêm ảnh</button>
+            </div>
+
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="product-info">
+                <h1>YouTube Premium + YouTube Music 1 năm - Gia hạn chính chủ</h1>
+                <p class="product-status">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+                <p class="product-code">Mã sản phẩm:  youtube p12m</p>
+                <p class="product-category">
+                    Thể loại:  App, Giải trí, Youtube
+                </p>
+                <p class="product-price">
+                    499.000đ                    <span class="original-price">6.720.000đ</span> <span class="discount">-93%</span>
+                </p>
+
+                @*Các tùy chọn khác cho sản phẩm*@
+            <div class="product-options">
+                <button class="option-button">1 tháng</button>
+                <button class="option-button">3 tháng</button>
+                <button class="option-button">6 tháng</button>
+                <button class="option-button">12 tháng</button>
+            </div>
+
+                <!-- Nút Mua ngay và Thêm vào giỏ hàng -->
+                <div class="purchase-buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mô tả chi tiết sản phẩm -->
+        <div class="product-description">
+            <p>Với YouTube Premium, bạn có thể xem hàng triệu video không có quảng cáo. Quảng cáo bao gồm cả quảng cáo trước và trong video cũng như quảng cáo biểu ngữ, quảng cáo đi kèm kết quả tìm kiếm và quảng cáo lớp phủ trên video. Bạn vẫn có thể xem quảng cáo hoặc thương hiệu nhúng trong nội dung của người sáng tạo mà YouTube không kiểm soát.</p>
+            <ul>
+                <li>Vui lòng không thay đổi thông tin tài khoản.</li>
+                <li>Giá thuê tài khoản tính theo ngày. Ví dụ bạn muốn mua 5 ngày thì chọn số lượng sản phẩm là 5.</li>
+                <li>Divine Shop cam kết chỉ cho 1 khách hàng thuê tại 1 thời điểm.</li>
+                <li>Tài khoản có thể đã có file save sẵn, bạn có thể xóa đi và chơi từ đầu.</li>
+                <li>Thuê tối thiểu 3 ngày.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    .prodContainer .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .product-item mark {
+        background-color: red;
+        border-radius: 4px;
+        color: whitesmoke;
+    }
+
+    .product-item img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .product-item {
+        width: 100%;
+        flex: 1;
+    }
+
+    .prodDescription {
+        font: arial;
+        font-size: 15px;
+    }
+
+    .prodPrice s {
+        color: lightgrey;
+    }
+
+    #prodEntertainment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #prodEntertainment h2 {
+            font: arial;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+    .productEntertainment {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+        .productEntertainment img {
+            height: 50%;
+        }
+       .productEntertainment .product-item a{
+            text-decoration: none;
+            color:black;
+        }
+        .productEntertainment .product-item a:hover {
+            
+            color: blue;
+        }
+</style>
+<div id="prodEntertainment">
+
+    <div>
+        <h2 class="title">Tìm kiếm sản phẩm</h2>
+    </div>
+</div>
+<div class="productEntertainment">
+    <div class="product-item">
+        <a href="~/Product/ProductDetail2">
+            <img src="../Content/img/sp2.png" class="img-fluid" alt="Product 2" onclick="goToProductDetail(2)" />
+            <p class="prodDescription">
+                Netflix Premium 1 tháng - Tài khoản
+            </p>
+            <p class="prodPrice">
+                <b>79.000đ</b> <s>260.000đ</s> <mark>-70%</mark>
+            </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail3">
+            <img src="../Content/img/sp3.png" class="img-fluid" alt="Product 3" onclick="goToProductDetail(3)" />
+            <p class="prodDescription">
+                Spotify Premium 1 năm - Gia hạn chính chủ
+            </p>
+            <p class="prodPrice">
+                <b>
+                    390.000đ
+                </b>
+                <s>
+                    590.000đ
+                </s>
+                <mark>
+                    -34%
+                </mark>
+            </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/ProductDetail15">
+            <img src="../Content/img/sp2.2.png" class="img-fluid" alt="Product 2.2" onclick="goToProductDetail(2.2)" />
+            <p class="prodDescription">
+                YouTube Premium + YouTube Music 6 tháng - Gia hạn chính chủ
+            </p>
+            <p class="prodPrice">
+                <b>269.000đ</b> <s>3.360.000đ</s> <mark>-92%</mark>
+            </p>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="~/Product/Productdetail16">
+            <img src="../Content/img/sp2.3.png" class="img-fluid" alt="Product 2.3" onclick="goToProductDetail(2.3)" />
+            <p class="prodDescription">
+                YouTube Premium + YouTube Music 1 năm - Gia hạn chính chủ
+            </p>
+            <p class="prodPrice">
+                <b>
+                    499.000đ
+                </b>
+                <s>
+                    6.720.000đ
+                </s>
+                <mark>
+                    -93%
+                </mark>
+            </p>
+        </a>
+    </div>
+</div>
+
+
+

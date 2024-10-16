@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="~/Content/MyCSS/StyleProduct.css" rel="stylesheet" />
+    <script src="~/Scripts/MyJS/JavaProduct.js"></script>
+</head>
+<body>
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="~/Content/img/sp6.2.png" alt="Black Myth: Wukong" />
+                <button class="view-more-images">Xem thêm ảnh</button>
+            </div>
+
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="product-info">
+                <h1>CapCut Pro 77 Ngày - Nâng cấp chính chủ</h1>
+                <p class="product-status">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+                <p class="product-code">Mã sản phẩm: gh-cap-cut-77d</p>
+                <p class="product-category">
+                    Thể loại:  thiết kế, làm việc, new, Edit Ảnh Video
+                </p>
+                <p class="product-price">199.000đ<span class="original-price">470.000đ</span> <span class="discount">-58%</span></p>
+
+                @*Các tùy chọn khác cho sản phẩm*@
+                <div class="product-options">
+                    <button class="option-button">Capcut 7 ngày</button>
+                        <button class="option-button">Capcut 35 ngày</button>
+                        <button class="option-button">Capcut 70 ngày</button>
+                        <button class="option-button">Capcut 1 năm chính chủ</button>
+                </div>
+
+                <!-- Nút Mua ngay và Thêm vào giỏ hàng -->
+                <div class="purchase-buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mô tả chi tiết sản phẩm -->
+        <div class="product-description">
+            <p>
+                Capcut là ứng dụng cho phép người dùng có thể chỉnh sửa video miễn phí trên điện thoại, có mặt trên hệ điều hành Android, iOS. Capcut có một số tính năng tiện lợi, phục vụ cho người dùng chỉnh sửa video ở mức cơ bản. Ứng dụng này ngày càng được nhiều người ưa thích, sử dụng để biên tập các video trên Tiktok, Instagram,…
+            </p>
+            <ul>
+                <li>Vui lòng không thay đổi thông tin tài khoản.</li>
+                <li>Giá thuê tài khoản tính theo ngày. Ví dụ bạn muốn mua 5 ngày thì chọn số lượng sản phẩm là 5.</li>
+                <li>Divine Shop cam kết chỉ cho 1 khách hàng thuê tại 1 thời điểm.</li>
+                <li>Tài khoản có thể đã có file save sẵn, bạn có thể xóa đi và chơi từ đầu.</li>
+                <li>Thuê tối thiểu 3 ngày.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

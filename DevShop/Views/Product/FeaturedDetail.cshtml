@@ -1,0 +1,124 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    #featureProd {
+        text-align: left;
+    }
+
+        #featureProd h2 {
+            font: arial;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+    #textFeature {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product-item mark {
+        background-color: red;
+        border-radius: 4px;
+        color: whitesmoke;
+    }
+
+    .product-item img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .product-item {
+        width: 100%;
+        flex: 1;
+    }
+
+    .prodContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .prodDescription {
+        font: arial;
+        font-size: 15px;
+    }
+
+    .prodPrice s {
+        color: lightgrey;
+    }
+    .prodContainer .product-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .prodContainer .product-item a:hover {
+            color: blue;
+        }
+</style>
+<section id="featureProd">
+    <div id="textFeature">
+        <div>
+            <h2 class="title">Sản phẩm nổi bật</h2>
+        </div>
+    </div>
+    <div class="product-grid">
+        <div class="prodContainer">
+
+            <div class="product-item">
+                <a href="~/Product/ProductDetail">
+                    <img src="../Content/img/sp1.png" class="img-fluid" alt="Product 1" onclick="goToProductDetail(1)" />
+                    <p class="prodDescription">
+                        Black Myth: Wukong - Thuê game (1 ngày)
+                    </p>
+                    <p class="prodPrice">
+                        <b>40.000đ</b> <s>1.299.000đ</s> <mark>-97%</mark>
+                    </p>
+                </a>
+            </div>
+
+            <div class="product-item">
+                <a href="~/Product/ProductDetail2">
+                    <img src="../Content/img/sp2.png" class="img-fluid" alt="Product 2" onclick="goToProductDetail(2)" />
+                    <p class="prodDescription">
+                        Netflix Premium 1 tháng - Tài khoản
+                    </p>
+                    <p class="prodPrice">
+                        <b>79.000đ</b>
+                        <s>260.000đ</s>
+                        <mark>-70%</mark>
+                    </p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="~/Product/ProductDetail3">
+                    <img src="../Content/img/sp3.png" class="img-fluid" alt="Product 3" onclick="goToProductDetail(3)" />
+                    <p class="prodDescription">
+                        Spotify Premium 1 năm - Gia hạn chính chủ
+                    </p>
+                    <p class="prodPrice">
+                        <b>390.000đ</b>
+                        <s>590.000đ</s>
+                        <mark>-34%</mark>
+                    </p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="~/Product/ProductDetail4">
+                    <img src="../Content/img/sp4.png" class="img-fluid" alt="Product 4" onclick="goToProductDetail(4)" />
+                    <p class="prodDescription">
+                        Zoom Pro ~1 tháng (28 ngày) - Gói nâng cấp
+                    </p>
+                    <p class="prodPrice">
+                        <b>210.000đ</b>
+                        <s>350.000đ</s>
+                        <mark>-40%</mark>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+

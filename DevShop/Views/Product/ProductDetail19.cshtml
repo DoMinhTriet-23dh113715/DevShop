@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="~/Content/MyCSS/StyleProduct.css" rel="stylesheet" />
+    <script src="~/Scripts/MyJS/JavaProduct.js"></script>
+</head>
+<body>
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="~/Content/img/sp5.3.png" alt="Black Myth: Wukong" />
+                <button class="view-more-images">Xem thêm ảnh</button>
+            </div>
+
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="product-info">
+                <h1>Doodly Standard - Tài khoản vĩnh viễn</h1>
+                <p class="product-status">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+                <p class="product-code">Mã sản phẩm:  tk Doodly stan</p>
+                <p class="product-category">
+                    Thể loại:  App, Làm việc
+                </p>
+                <p class="product-price">
+                    599.000đ
+                    <span class="original-price">4.800.000đ</span> <span class="discount">-88%</span>
+                </p>
+
+                @*Các tùy chọn khác cho sản phẩm*@
+                <div class="product-options">
+                    <button class="option-button">Standard</button>
+                        <button class="option-button">Enterprise</button>
+                        <button class="option-button">Rainbow + Enterprise</button>
+                        @*<button class="option-button">nâng cấp 1 năm</button>*@
+                </div>
+
+                <!-- Nút Mua ngay và Thêm vào giỏ hàng -->
+                <div class="purchase-buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mô tả chi tiết sản phẩm -->
+        <div class="product-description">
+            <p>Doodly là phần mềm thiết kế video vẽ tay hàng đầu, cho phép bạn tạo ra các video hoạt hình theo phong cách bảng trắng, bảng đen, và bảng kính dễ dàng. Với giao diện kéo và thả trực quan, Doodly không yêu cầu kỹ năng kỹ thuật, giúp bạn tạo ra các video chuyên nghiệp chỉ trong vài phút. Thư viện đồ họa phong phú với hàng nghìn hình ảnh, nhân vật và cảnh nền có sẵn, cùng với khả năng tùy chỉnh linh hoạt, giúp bạn tạo ra nội dung sáng tạo và ấn tượng.</p>
+            <ul>
+                <li>Vui lòng không thay đổi thông tin tài khoản.</li>
+                <li>Giá thuê tài khoản tính theo ngày. Ví dụ bạn muốn mua 5 ngày thì chọn số lượng sản phẩm là 5.</li>
+                <li>Divine Shop cam kết chỉ cho 1 khách hàng thuê tại 1 thời điểm.</li>
+                <li>Tài khoản có thể đã có file save sẵn, bạn có thể xóa đi và chơi từ đầu.</li>
+                <li>Thuê tối thiểu 3 ngày.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

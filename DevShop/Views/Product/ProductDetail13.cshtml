@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="~/Content/MyCSS/StyleProduct.css" rel="stylesheet" />
+    <script src="~/Scripts/MyJS/JavaProduct.js"></script>
+</head>
+<body>
+    <div class="product-detail">
+        <div class="product-header">
+            <div class="product-image">
+                <img src="~/Content/img/sp4.3.jpg" alt="Black Myth: Wukong" />
+                <button class="view-more-images">Xem thêm ảnh</button>
+            </div>
+
+            <!-- Thông tin chi tiết sản phẩm -->
+            <div class="product-info">
+                <h1>Duolingo 1 năm - Gia hạn chính chủ</h1>
+                <p class="product-status">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+                <p class="product-code">
+                    Mã sản phẩm:  gia-han-duolingo-1y
+                </p>
+                <p class="product-category">
+                    Thể loại:  App, Học tập
+                </p>
+                <p class="product-price">290.000đ<span class="original-price">1.850.000đ</span> <span class="discount">-84%</span></p>
+
+                @*Các tùy chọn khác cho sản phẩm*@
+                <div class="product-options">
+                    <button class="option-button">Gia hạn 1 năm</button>
+                        <button class="option-button">Gia hạn 1 tháng</button>
+                        <button class="option-button">Tài khoản 1 tháng</button>
+                        <button class="option-button">Gia hạn 1 năm</button>
+                </div>
+
+                <!-- Nút Mua ngay và Thêm vào giỏ hàng -->
+                <div class="purchase-buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mô tả chi tiết sản phẩm -->
+        <div class="product-description">
+            <p> Duolingo là một ứng dụng vui nhộn, miễn phí giúp bạn học hơn 40 ngôn ngữ qua những bài học ngắn, nhỏ gọn. Luyện tập kỹ năng nghe, nói, đọc và viết để xây dựng vốn từ vựng và nắm vững ngữ pháp.</p>
+            <ul>
+                <li>Vui lòng không thay đổi thông tin tài khoản.</li>
+                <li>Giá thuê tài khoản tính theo ngày. Ví dụ bạn muốn mua 5 ngày thì chọn số lượng sản phẩm là 5.</li>
+                <li>Divine Shop cam kết chỉ cho 1 khách hàng thuê tại 1 thời điểm.</li>
+                <li>Tài khoản có thể đã có file save sẵn, bạn có thể xóa đi và chơi từ đầu.</li>
+                <li>Thuê tối thiểu 3 ngày.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+

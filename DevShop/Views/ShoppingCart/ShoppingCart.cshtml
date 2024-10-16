@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<html>
+<head>
+    <title>Tính Tiền</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <script>
+        function CalculateTotal() {
+            var dg = parseFloat(document.getElenmenById("Price").value);
+            var sl = parseFloat(document.getElenmenById("Quantity").value);
+            if (dg <= 0) alert("Đơn giá phải >0");
+            else if (sl <= 0 || sl >= 15) alert("Số lượng phải trong khoảng [1,15]");
+            window.document.getElementById("lbTotal").value = dg * sl;
+        }
+    </script>
+</head>
+<body>
+    NHẬP SỐ LƯỢNG VÀ ĐƠN GIÁ
+    <form method="post">
+        Mặt hàng:
+        Đơn giá :<input type="number" id="iPrice" name="Price" value="0" />
+        Số lượng :<input type="number" id="iQuantity" name="Quantity"
+                         min="0" max="15"
+                         oncancel="CalculateTotal();" />
+        Thành Tiền :<input type="text" id="lbTotal" name="Total" />
+    </form>
+</body>
+</html>
